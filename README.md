@@ -73,7 +73,7 @@
 #### 仓库地址
 
 > [!TIP]
-> 以下三个仓库内容完全一致，根据自己的网络情况择一即可。
+> 以下两个仓库内容完全一致，根据自己的网络情况择一即可。
 
 [GitHub 仓库](https://github.com/luestr/ProxyResource/blob/main/README.md) - 需要代理访问
 
