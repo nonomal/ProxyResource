@@ -79,8 +79,6 @@
 
 [GitLab 仓库](https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md/) - 电信联通可直连访问
 
-[Gitea 仓库](https://gitea.com/latick/ProxyResource/src/branch/main/README.md) - 电信、联通、移动、广电可直连
-
 ------
 
 #### 机场推荐
