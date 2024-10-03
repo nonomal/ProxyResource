@@ -213,7 +213,7 @@ DOMAIN, oss.cdn.adintl.cn, REJECT
 
 # 拼多多广告平台
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
-^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/(c|i)\/mrk_ reject
+^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
