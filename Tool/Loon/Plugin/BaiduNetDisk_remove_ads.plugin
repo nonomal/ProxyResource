@@ -114,5 +114,11 @@ DOMAIN-SUFFIX, union.baidu.com, REJECT
 # 广告配置
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv reject-dict
 
+# 字节跳动广告
+^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
+^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-[a-z])?\.com\/api\/ad\/ reject
+^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
+^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
+
 [MitM]
-hostname = pan.baidu.com, 180.76.76.200, 180.76.76.112
+hostname = pan.baidu.com, 180.76.76.200, 180.76.76.112, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com
