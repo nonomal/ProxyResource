@@ -1,8 +1,9 @@
 // 脚本作者：小白脸
+// 2024-10-11 14:36:59
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
 
-if ($argument != null) {
+if (typeof $argument !== 'undefined') {
   const AK = $argument.AK;
   const SK = $argument.SK;
   const MAX_RETRIES = $argument.MAX_RETRIES;
