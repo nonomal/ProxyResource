@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Markdown/WPS/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
-#!date = 2024-10-11 12:54:42
+#!date = 2024-10-11 12:58:19
 
 [Argument]
 AK = input, "null", tag = API Key, desc = 这里需要输入有效的API Key
@@ -19,7 +19,7 @@ CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符�
 CaptureCookie = switch, false, true, tag = 捕获Cookie, desc = 此开关控制插件是否捕获Cookie
 
 [Script]
-http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, requires-body = true, tag = 捕获Cookie, enable={CaptureCookie}
+http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/WPS/WPS_checkin.js, requires-body = true, tag = 捕获Cookie, enable={CaptureCookie}
 
 cron {CRONEXP} script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/WPS/WPS_checkin.js, tag = WPS签到, timeout = 120, Argument = [{AK}, {SK}, {MAX_RETRIES}]
 
