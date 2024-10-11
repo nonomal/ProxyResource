@@ -1,13 +1,13 @@
 #!name = WPS签到
-#!desc = 
-#!openUrl = https://5wuv.com/
+#!desc = 暂时没写描述
+#!openUrl = https://apps.apple.com/app/id599852710
 #!author = 小白脸
 #!tag = 去广告
-#!system = iOS, iPadOS
+#!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/555DY.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
 #!date = 2024-10-11 11:25:27
 
 [Argument]
