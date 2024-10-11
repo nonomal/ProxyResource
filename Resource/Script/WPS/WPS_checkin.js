@@ -1,6 +1,6 @@
 /*
 脚本作者：小白脸
-更新时间：2024-10-11 15:42:31
+更新时间：2024-10-11 15:45:26
 */
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
@@ -26,7 +26,7 @@ const captureRequest = () => {
 
   isInfo && $.writeJson({ userid, cookie: { wps_sids } }, "WPS_info");
 
-  const message = isInfo ? "成功捕获Cookie,,请前往WPS每日签到插件的详情页面关闭捕获Cookie" : "捕获Cookie失败,,请检查请求内容。";
+  const message = isInfo ? "成功捕获Cookie,,请前往WPS每日签到插件的详情页面关闭捕获Cookie，避免持续运行造成不必要的开销。" : "捕获Cookie失败,,请检查请求内容。";
 
   $.msg(...message.split(","));
 };
