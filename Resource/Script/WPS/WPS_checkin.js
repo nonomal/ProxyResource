@@ -2,7 +2,7 @@
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
 
-if ($argument) {
+if ($argument != null) {
   const AK = $argument.AK;
   const SK = $argument.SK;
   const MAX_RETRIES = $argument.MAX_RETRIES;
