@@ -25,7 +25,7 @@ const captureRequest = () => {
   isInfo && $.writeJson({ userid, cookie: { wps_sids } }, "WPS_info");
 
   const message = isInfo
-    ? "WPS每日签到,,成功捕获Cookie，请前往WPS每日签到插件的详情页面关闭捕获Cookie，避免持续运行造成不必要的开销。"
+    ? "WPS每日签到,,已成功捕获Cookie，请前往WPS每日签到插件的详情页面关闭捕获Cookie，避免持续运行造成不必要的开销。"
     : "WPS每日签到,,捕获Cookie失败，请检查请求内容。";
 
   $.msg(...message.split(","));
