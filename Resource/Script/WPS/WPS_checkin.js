@@ -1,12 +1,15 @@
 // 脚本作者：小白脸
-// 2024-10-11 14:42:46
+// 2024-10-11 14:45:01
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
 
-if (typeof $argument !== 'undefined') {
-  const AK = $argument.AK;
-  const SK = $argument.SK;
-  const MAX_RETRIES = $argument.MAX_RETRIES;
+var AK = null;
+var SK = null;
+var MAX_RETRIES = null;
+if ($argument) {
+  AK = $argument.AK;
+  SK = $argument.SK;
+  MAX_RETRIES = $argument.MAX_RETRIES;
 }
 
 const captureRequest = () => {
