@@ -1,6 +1,6 @@
 # 使用说明
 
-1. 登录`https://app.follow.is/`
+1. 登录网页版 https://app.follow.is/
 2. 抓包获取`https://api.follow.is/wallets`的请求头内容，由于Loon支持HTTP/2，所以Cookie字段会有三个；
 3. 分别复制`cookie`字段中的值；
 4. `csrfToken`的值是`authjs.session-token=xxx-xxxx-xxxx`，如`authjs.session-token=65u7ed9f-0a1f-4341-b1be-4cce07e82204`；
