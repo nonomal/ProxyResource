@@ -1,7 +1,7 @@
 /*
 脚本引用 https://github.com/chavyleung/scripts/blob/master/follow/follow.js
 */
-const $ = new Env('follow 每日签到')
+const $ = new Env('Follow每日签到')
 $.desc = []
 
 const csrfToken = $argument.token
